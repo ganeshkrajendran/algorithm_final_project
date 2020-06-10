@@ -76,7 +76,7 @@ def readfile(filename):
 #
 
 if __name__ == "__main__":
-    # change input file as required.
+    # change input file as required
     data_dict = readfile("string_pattern_match2.json")
     p = plotter();
     tracemalloc.start()
@@ -96,9 +96,11 @@ if __name__ == "__main__":
         print(f"Time taken to complete {time}ms")
         p.add_time(time)
     tracemalloc.stop()
-    # - Comments above block to get pattern time and size graph
+    # - below block to get fixed pattern size with varying input text size graph
     # p.plot_txt_time()
     # p.plot_txt_size()
-    # - Comments above block to get pattern time and size graph
+    # -  above block to get fixed pattern size with varying input text size graph
+    # - below block to get fixed text size with varying pattern size graph
     p.plot_pat_time()
     p.plot_pat_size()
+    # - below block to get fixed text size with varying pattern size graph
